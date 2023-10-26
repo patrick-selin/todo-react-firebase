@@ -21,7 +21,7 @@ function App() {
     {
       headerName: "",
       field: "id",
-      width: 90,
+      width: 95,
       cellRenderer: (params) => (
         <IconButton
           onClick={() => deleteTodo(params.value)}
