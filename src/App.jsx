@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import "./App.css";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-material.css";
-// import { AppRegistrationOutlined } from "@mui/icons-material";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -57,6 +56,7 @@ function App() {
           <Typography variant="h5">TodoList</Typography>
         </Toolbar>
       </AppBar>
+      <br />
       <AddTodo addTodo={addTodo} />
       <div className="ag-theme-material" style={{ height: 400, width: 600 }}>
         <AgGridReact rowData={todos} columnDefs={columnDefs} />
